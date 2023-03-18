@@ -1,3 +1,6 @@
+@media (screen) {
+	
+}
 body{
 	background-color:blueviolet;
 	margin: 25px;
@@ -14,9 +17,11 @@ form .fieldset{
 	border: 3px solid black;
 }
 button{
-	border-radius: 5px;
+	border-radius: 10px;
 	color: black;
 	font-weight: bold;
+	padding: 5px 10px;
+	border-color: 5px black;
 
 }
 legend{
