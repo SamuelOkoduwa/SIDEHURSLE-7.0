@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Styling the HTML form</form></title>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>Registeration</legend>
+			<label for="">Name</label><br>
+			<input type="text" placeholder="First Name" required><br>
+			<input type="text" placeholder="Last Name" required><br><br>
+			<label for="gender">Gender</label>
+			<select name="" id="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="confused">Choose not to say</option>
+			</select><br><br>
+			<label for="">Phone Number</label>
+			<input type="tel" pattern="+23408052345214" title="Please include country code"><br><br>
+			<label for="">Email</label>
+			<input type="email" title="Please insert your email" required><br><br>
+			<label for="">Password</label>
+			<input type="password" title="Insert your password" required><br><br>
+			<button type="submit" >Submit</button>
+			
+		</fieldset>
+	</form>
+</body>
+</html>
