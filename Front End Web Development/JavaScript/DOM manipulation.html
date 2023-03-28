@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>JavaScript</h1>
+	<h2>Dom Manipulation</h2>
+	<p id="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt omnis commodi odit id nostrum aut aliquam dolorem tenetur. Debitis quas possimus accusamus voluptates sit reiciendis quis provident ducimus ratione.</p>
+	<p class="subtext2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eaque voluptatibus quo quae iste commodi quos iusto voluptas dolores velit, expedita quaerat dignissimos, officia, numquam temporibus! Officiis voluptas est officia?</p>
+	<button id="btn">Submit</button>
+	<script type="application/javascript">
+		var element = document.getElementById('subtext');
+		console.log(element)
+		var element1 = document.getElementsByClassName('subtext2');
+		console.log(element1)
+		console.log(element1[0].innerHTML)
+		var x = 3 + 4;
+		console.log(x);
+
+		//var elementTagName = document.getElementsByTagName('h2');
+		//console.log(elementTagName);
+		/*var subtextTwo = document.getElementsByClassName('subtext2')[0];
+		var btn = document.getElementById('btn');
+
+		btn.addEventListener('click', function(){
+			subtextTwo.innerHTML = 'This is our new test';
+		});
+		
+	</script>
+</body>
+</html>
