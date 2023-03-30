@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGN UP</title>
+	<link rel="stylesheet" href="registeration.css">
+</head>
+<body>
+	<main>
+		<nav>
+			<a class="home" href="sample landing page.html">SAESOM SPACE</a>
+		</nav>
+		<form name="form" action="" method="GET">
+			<fieldset>
+				<legend>SIGN IN</legend>
+				<label for="">Email</label>
+				<input type="email" title="Please insert your email" required><br><br>
+				<label for="">Password</label>
+				<input type="password" name="data"  title="Insert your password" required><br><br>
+				<!--<button type="submit" >Submit</button>-->
+				<p id="msg"></p>
+				<input type="button" name="button" value="Submit" onclick="validateForm(this.form)">
+			</fieldset>
+		</form>
+	</main>
+	<script>
+		function validateForm(form){
+			let value = form.data.value;
+			if (value.length < 8){
+			document.getElementById('msg').innerHTML = "Please use more than 8 characters";
+			}else{
+				document.getElementById('msg').innerHTML = "Submit Successful";
+			}
+		}
+	</script>
+</body>
+</html>

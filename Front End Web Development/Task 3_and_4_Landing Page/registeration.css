@@ -1,0 +1,77 @@
+@media (screen) {
+	
+}
+body{
+	background-color:blueviolet;
+	margin: 25px;
+}
+nav{
+	justify-content: space-around;
+	color: antiquewhite;
+	padding-left: 10px;
+	margin: 10px;
+	font-weight: bolder;
+	font-size: larger;
+}
+nav a.home{
+	padding-right: 100px;
+	justify-content:left;
+	text-decoration: none;
+	color: antiquewhite;
+}
+form{
+	background-color: blue;
+	/**height: 100vh;*/
+	width: 800px;
+	padding: 0px;
+	border: 5px solid red
+}
+form .fieldset{
+	height: 97%;
+	border: 3px solid black;
+}
+input[type=button]{
+	border-radius: 10px;
+	color: black;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-color: 5px black;
+
+}
+legend{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+label{
+	color: black;
+	font-size: larger;
+	font-weight: bolder;
+}
+input[type=text] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 4px;
+  }
+  select {
+	width: 50%;
+	padding: 10px 20px;
+	border-radius: 4px;
+  }
+  input[type=tel]{
+	width: 46%;
+	padding: 12px;
+	border-radius: 4px;
+  }
+  input[type=email]{
+	width: 44%;
+	padding: 12px 20px;
+	border-radius: 4px;
+  }
+  input[type=password]{
+	width: 44%;
+	padding: 12px 20px;
+	border-radius: 4px;
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGN UP</title>
+	<link rel="stylesheet" href="registeration.css">
+</head>
+<body>
+	<main>
+		<nav>
+			<a class="home" href="sample landing page.html">SAESOM SPACE</a>
+		</nav>
+		<form name="form" action="" method="GET">
+			<fieldset>
+				<legend>Registeration</legend>
+				<label for="">Name</label><br>
+				<input type="text" placeholder="First Name" required><br>
+				<input type="text" placeholder="Last Name" required><br><br>
+				<label for="gender">Gender</label>
+				<select name="" id="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="confused">Choose not to say</option>
+				</select><br><br>
+				<label for="">Phone Number</label>
+				<input type="tel" pattern="+23408052345214" title="Please include country code"><br><br>
+				<label for="">Email</label>
+				<input type="email" title="Please insert your email" required><br><br>
+				<label for="">Password</label>
+				<input type="password" name="data" title="Insert your password" required><br><br>
+				<!--<button type="submit" >Submit</button>-->
+				<p id="msg"></p>
+				<input type="button" name="button" value="Submit" onclick="validateForm(this.form)">
+			</fieldset>
+		</form>
+	</main>
+	<script>
+		function validateForm(form){
+			let value = form.data.value;
+			if (value.length < 8){
+			document.getElementById('msg').innerHTML = "Kindly use more than eight characters";
+			}else{
+				document.getElementById('msg').innerHTML = "Submission Successful";
+			}
+		}
+	</script>
+</body>
+</html>
